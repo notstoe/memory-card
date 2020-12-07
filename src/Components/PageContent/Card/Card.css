@@ -1,0 +1,8 @@
+.card {
+	width: 20vw;
+	cursor: pointer;
+	/* border: 1px solid black; */
+	box-shadow: 1px 0px 10px 2px gray;
+	border-radius: 10px;
+	margin: 10px 5px;
+}
