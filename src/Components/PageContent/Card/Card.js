@@ -2,7 +2,16 @@ import React from "react";
 import "./Card.css";
 
 function Card(props) {
-	return <img className="card" alt={props.imgAlt} src={props.cardImg}></img>;
+	const { imgAlt, cardImg } = props;
+
+	return (
+		<img
+			onClick={() => console.log("clicked")}
+			className="card"
+			alt={imgAlt}
+			src={cardImg}
+		/>
+	);
 }
 
 export default Card;
