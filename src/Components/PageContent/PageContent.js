@@ -1,13 +1,14 @@
 import React from "react";
 import Card from "./Card/Card";
-import cardImg from "./assets/tomato.jpg";
+import "./PageContent.css";
+import cardsImgs from "./imgObject";
 
 function PageContent() {
-	return (
-		<div className="cardsContainer">
-			<Card cardImg={cardImg} imgAlt="tomatoes" />
-		</div>
-	);
+	const cardComponents = cardsImgs.map((currImgObj) => {
+		return <Card cardImg={currImgObj.image} imgAlt={currImgObj.alt} />;
+	});
+
+	return <div className="cardsContainer">{cardComponents}</div>;
 }
 
 export default PageContent;
