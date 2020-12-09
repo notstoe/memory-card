@@ -6,17 +6,24 @@ import fruitsImg from "./imgObject";
 function PageContent() {
 	const [imgsObj, setImgsObj] = useState({ cardsImgs: fruitsImg });
 
-	// Support Function to Shuffle ImgObjects Array
-	function shuffleArray(arr) {
-		let i = arr.length - 1;
-		for (; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			const temp = arr[i];
-			arr[i] = arr[j];
-			arr[j] = temp;
+	function handleClick() {
+		// Support Function to Shuffle ImgObjects Array
+		function shuffleArray(arr) {
+			let i = arr.length - 1;
+			for (; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				const temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+			const newArr = arr.map((element) => element);
+			return newArr;
 		}
-		const newArr = arr.map((element) => element);
-		return newArr;
+
+		let oldArr = imgsObj["cardsImgs"].map((element) => element);
+		let shuffledArr = shuffleArray(oldArr); //shuffled array is saved into a variable for changing state
+
+		setImgsObj({ cardsImgs: shuffledArr });
 	}
 
 	const cardComponents = imgsObj["cardsImgs"].map((currImgObj, idx) => {
@@ -25,7 +32,7 @@ function PageContent() {
 				key={idx}
 				cardImg={currImgObj.image}
 				imgAlt={currImgObj.alt}
-				// shuffleArr={() => shuffleArray(cardsImgs)}
+				handleClick={handleClick}
 			/>
 		);
 	});
