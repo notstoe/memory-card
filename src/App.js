@@ -5,6 +5,7 @@ import PageContent from "./Components/PageContent/PageContent";
 
 function App() {
 	const [score, setScore] = useState(0);
+	const [highScore, setHighScore] = useState(0);
 
 	function incScore() {
 		setScore(score + 1);
@@ -14,10 +15,22 @@ function App() {
 		setScore(0);
 	}
 
+	function isHighScore() {
+		if (score > highScore) setHighScore(score);
+		if (score === 15) {
+			alert("Congrats for winning the game!");
+			return;
+		}
+	}
+
 	return (
 		<div>
-			<Header score={score} />
-			<PageContent incScore={incScore} resetScore={resetScore} />
+			<Header score={score} highScore={highScore} />
+			<PageContent
+				incScore={incScore}
+				resetScore={resetScore}
+				isHighScore={isHighScore}
+			/>
 		</div>
 	);
 }

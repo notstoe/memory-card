@@ -4,7 +4,7 @@ import "./PageContent.css";
 import fruitsImg from "./imgObject";
 
 function PageContent(props) {
-	const { incScore, resetScore } = props;
+	const { incScore, resetScore, isHighScore } = props;
 	const [imgsObj, setImgsObj] = useState({ cardsImgs: fruitsImg });
 	const [scoreObj, setScoreObj] = useState({});
 
@@ -12,6 +12,7 @@ function PageContent(props) {
 		const { alt } = e.target;
 
 		if (scoreObj.hasOwnProperty(alt)) {
+			isHighScore();
 			resetScore();
 			setScoreObj({});
 		} else {

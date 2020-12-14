@@ -3,6 +3,7 @@ import "./Header.css";
 import github from "./assets/github.png";
 
 function Header(props) {
+	const { score, highScore } = props;
 	return (
 		<header>
 			<div className="headerChildren">
@@ -11,8 +12,8 @@ function Header(props) {
 					<img id="github" src={github} alt="github" />
 				</a>
 				<div className="scoreboardContainer">
-					<div className="scoreboard">Score: {props.score}</div>
-					<div className="scoreboard">Highest Score: 0</div>
+					<div className="scoreboard">Score: {score}</div>
+					<div className="scoreboard">Highest Score: {highScore}</div>
 				</div>
 			</div>
 			<p id="pageSubtitle">Don't click on the same card twice!</p>
