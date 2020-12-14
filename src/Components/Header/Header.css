@@ -6,7 +6,7 @@ header {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: white;
-	background-color: #24242e;
+	background-color: #2f2f3b;
 	font-family: "Andika New Basic", sans-serif;
 }
 
@@ -37,13 +37,11 @@ header {
 	margin-right: 18px;
 }
 
-.scoreboard {
-}
-
 .scoreboardContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 8vh;
+	height: 6vh;
+	margin-left: 10px;
 }
