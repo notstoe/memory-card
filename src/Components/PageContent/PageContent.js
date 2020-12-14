@@ -17,7 +17,13 @@ function PageContent(props) {
 			setScoreObj({});
 		} else {
 			setScoreObj({ ...scoreObj, [alt]: true });
-			incScore();
+			let newScore = incScore();
+			if (newScore > 14) {
+				alert("Congrats for winning the game!");
+				isHighScore(15);
+				resetScore();
+				setScoreObj({});
+			}
 		}
 
 		// Support Function to Shuffle ImgObjects Array

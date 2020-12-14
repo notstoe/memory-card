@@ -9,18 +9,19 @@ function App() {
 
 	function incScore() {
 		setScore(score + 1);
+		return score + 1;
 	}
 
 	function resetScore() {
 		setScore(0);
 	}
 
-	function isHighScore() {
-		if (score > highScore) setHighScore(score);
-		if (score === 15) {
-			alert("Congrats for winning the game!");
+	function isHighScore(maxPoints) {
+		if (maxPoints) {
+			setHighScore(maxPoints);
 			return;
 		}
+		if (score > highScore) setHighScore(score);
 	}
 
 	return (
