@@ -16,3 +16,7 @@ The main objectives of this project are to:
 # more information
 
 [The Odin Project](https://www.theodinproject.com/lessons/memory-card)
+
+# todo
+
+- Make it friendly for Mobile
