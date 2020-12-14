@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.3077ff96.chunk.css",
+    "main.js": "/memory-card/static/js/main.cafb91d8.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.cafb91d8.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.a8e492fc.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.a8e492fc.js.map",
+    "static/js/2.d430d33a.chunk.js": "/memory-card/static/js/2.d430d33a.chunk.js",
+    "static/js/2.d430d33a.chunk.js.map": "/memory-card/static/js/2.d430d33a.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.3077ff96.chunk.css.map": "/memory-card/static/css/main.3077ff96.chunk.css.map",
+    "static/js/2.d430d33a.chunk.js.LICENSE.txt": "/memory-card/static/js/2.d430d33a.chunk.js.LICENSE.txt",
+    "static/media/banana.bf5205d5.jpg": "/memory-card/static/media/banana.bf5205d5.jpg",
+    "static/media/clementine.fb2d841b.jpg": "/memory-card/static/media/clementine.fb2d841b.jpg",
+    "static/media/github.53ebe589.png": "/memory-card/static/media/github.53ebe589.png",
+    "static/media/grapes.15cbad59.jpg": "/memory-card/static/media/grapes.15cbad59.jpg",
+    "static/media/guava.aaff75f8.jpg": "/memory-card/static/media/guava.aaff75f8.jpg",
+    "static/media/kiwi.7eb04875.jpg": "/memory-card/static/media/kiwi.7eb04875.jpg",
+    "static/media/lemon.ed975997.jpg": "/memory-card/static/media/lemon.ed975997.jpg",
+    "static/media/mango.7915b40b.jpeg": "/memory-card/static/media/mango.7915b40b.jpeg",
+    "static/media/passionfruit.4d3f7bc4.jpg": "/memory-card/static/media/passionfruit.4d3f7bc4.jpg",
+    "static/media/peach.c21c4520.jpg": "/memory-card/static/media/peach.c21c4520.jpg",
+    "static/media/pear.e08f5e5e.jpg": "/memory-card/static/media/pear.e08f5e5e.jpg",
+    "static/media/pitaya.6e62c102.jpg": "/memory-card/static/media/pitaya.6e62c102.jpg",
+    "static/media/strawberry.5026ed40.jpg": "/memory-card/static/media/strawberry.5026ed40.jpg",
+    "static/media/tomato.f4d3f8e9.jpg": "/memory-card/static/media/tomato.f4d3f8e9.jpg",
+    "static/media/watermelon.0adc8925.jpg": "/memory-card/static/media/watermelon.0adc8925.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8e492fc.js",
+    "static/js/2.d430d33a.chunk.js",
+    "static/css/main.3077ff96.chunk.css",
+    "static/js/main.cafb91d8.chunk.js"
+  ]
+}
