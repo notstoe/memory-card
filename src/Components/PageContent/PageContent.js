@@ -3,10 +3,22 @@ import Card from "./Card/Card";
 import "./PageContent.css";
 import fruitsImg from "./imgObject";
 
-function PageContent() {
+function PageContent(props) {
+	const { incScore, resetScore } = props;
 	const [imgsObj, setImgsObj] = useState({ cardsImgs: fruitsImg });
+	const [scoreObj, setScoreObj] = useState({});
 
-	function handleClick() {
+	function handleClick(e) {
+		const { alt } = e.target;
+
+		if (scoreObj.hasOwnProperty(alt)) {
+			resetScore();
+			setScoreObj({});
+		} else {
+			setScoreObj({ ...scoreObj, [alt]: true });
+			incScore();
+		}
+
 		// Support Function to Shuffle ImgObjects Array
 		function shuffleArray(arr) {
 			let i = arr.length - 1;

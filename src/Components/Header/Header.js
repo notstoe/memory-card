@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import github from "./assets/github.png";
 
-function Header() {
+function Header(props) {
 	return (
 		<header>
 			<div className="headerChildren">
@@ -11,7 +11,7 @@ function Header() {
 					<img id="github" src={github} alt="github" />
 				</a>
 				<div className="scoreboardContainer">
-					<div className="scoreboard">Score: 0</div>
+					<div className="scoreboard">Score: {props.score}</div>
 					<div className="scoreboard">Highest Score: 0</div>
 				</div>
 			</div>
